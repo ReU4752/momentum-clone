@@ -21,7 +21,7 @@ function getTime() {
     minutes < 10 ? `0${minutes}` : minutes
   }:${seconds < 10 ? `0${seconds}` : seconds}`;
 
-  meridiem.innerText = `${isMoring(hours) == true ? "am" : "pm"}`;
+  meridiem.innerText = `${isMoring(date.getHours()) == true ? "am" : "pm"}`;
 }
 
 function init() {
